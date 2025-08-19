@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <link rel="icon" type="image/x-icon" href="https://sdmntpraustraliaeast.oaiusercontent.com/files/00000000-feac-61fa-8cc7-98bcfdcac3cf/raw?se=2025-08-19T09%3A12%3A51Z&sp=r&sv=2024-08-04&sr=b&scid=6000ccd4-61e4-58d4-8209-803170074875&skoid=bbd22fc4-f881-4ea4-b2f3-c12033cf6a8b&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-18T20%3A54%3A12Z&ske=2025-08-19T20%3A54%3A12Z&sks=b&skv=2024-08-04&sig=G2%2Bv9JM3EItexLW/6E2yA1lB6iHh5dKX23TH2VofEfI%3D">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ร้านเดลิเวอรี่ — สั่งง่าย ส่งไว</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+    
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="#">
+        <!-- ใส่โลโก้ร้านได้ที่ src -->
+        <img src="https://sdmntpraustraliaeast.oaiusercontent.com/files/00000000-feac-61fa-8cc7-98bcfdcac3cf/raw?se=2025-08-19T09%3A12%3A51Z&sp=r&sv=2024-08-04&sr=b&scid=6000ccd4-61e4-58d4-8209-803170074875&skoid=bbd22fc4-f881-4ea4-b2f3-c12033cf6a8b&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-18T20%3A54%3A12Z&ske=2025-08-19T20%3A54%3A12Z&sks=b&skv=2024-08-04&sig=G2%2Bv9JM3EItexLW/6E2yA1lB6iHh5dKX23TH2VofEfI%3D" alt="โลโก้ร้าน" class="brand__logo" />
+        <span class="brand__name">Neko Delivery</span>
+      </a>
+
+      <form class="search" action="#" method="get">
+        <input class="search__input" type="search" name="q" placeholder="ค้นหาเมนู / ชื่ออาหาร…" aria-label="ค้นหาเมนู" />
+        <button class="search__btn" type="submit">ค้นหา</button>
+      </form>
+<a href="#" class="nav__signup" id="signupBtn">สมัครสมาชิก</a>
+
+      <nav class="nav">
+        <a href="menu.html" class="nav__link">เมนู</a>
+        <a href="delivery.html" class="nav__link">การจัดส่ง</a>
+        <a href="contact.html" class="nav__link">ติดต่อ</a>
+        <a href="#" class="nav__cart" aria-label="ตะกร้า (ยังไม่รองรับ)">
+          🧺 <span class="nav__cart-text">ตะกร้า</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero / Search Focus -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <h1 class="hero__title">สั่งอาหารออนไลน์จากร้านเรา</h1>
+      <p class="hero__subtitle">เมนูทำสด ร้อนๆ ส่งไวถึงหน้าบ้าน</p>
+
+      <form class="hero-search" action="#" method="get">
+        <input type="text" class="hero-search__input" placeholder="ปักหมุดที่อยู่จัดส่ง (เช่น คอนโด/บ้าน/อาคาร)" aria-label="ที่อยู่จัดส่ง" />
+        <button class="hero-search__btn" type="submit">ยืนยันที่อยู่</button>
+      </form>
+
+      <div class="badges">
+        <span class="badge">เปิดบริการทุกวัน 10:00–21:00</span>
+        <span class="badge">ส่งฟรีในระยะ 3 กม.*</span>
+        <span class="badge">ชำระเงินปลายทาง/โอน</span>
+      </div>
+    </div>
+  </section>
+
+ <!-- Category Pills -->
+<!-- Category Pills -->
+<section class="categories">
+  <div class="container categories__inner">
+    <button class="chip is-active" onclick="location.href='index.html'">ทั้งหมด</button>
+    <button class="chip" onclick="location.href='menu-rice.html'">เมนูข้าว</button>
+    <button class="chip" onclick="location.href='menu-ramen.html'">ราเมน</button>
+    <button class="chip" onclick="location.href='menu-snack.html'">ของทานเล่น</button>
+    <button class="chip" onclick="location.href='menu-dessert.html'">ขนม/เครื่องดื่ม</button>
+    <button class="chip" onclick="location.href='menu-set.html'">ชุดคุ้ม</button>
+  </div>
+</section>
+
+
+
+  <!-- Menu Grid -->
+  <main id="menu" class="menu">
+    <div class="container">
+      <h2 class="section-title">เมนูแนะนำ</h2>
+
+      <div class="grid">
+        <!-- Card 1 -->
+        <article class="card">
+          <img class="card__img" src="https://cea-design-week-cdn.5lab.co/wp-content/uploads/2021/12/16172807/161220211639650487.png" alt="ข้าวหน้าหมูย่าง" />
+          <div class="card__body">
+            <h3 class="card__title">ข้าวหน้าหมูย่างถ่าน</h3>
+            <p class="card__desc">หมูหมักซอสสูตรลับ ย่างหอม เสิร์ฟพร้อมไข่ออนเซ็น</p>
+            <div class="card__meta">
+              <span class="price">฿85</span>
+              <button class="btn btn--ghost" type="button">เพิ่มลงตะกร้า</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card">
+          <img class="card__img" src="https://api2.krua.co/wp-content/uploads/2021/07/RI1689_ImageBanner_1140x507.jpg" alt="ราเมนซุปกระดูกหมู" />
+          <div class="card__body">
+            <h3 class="card__title">ราเมนทงคตสึ</h3>
+            <p class="card__desc">ซุปกระดูกหมูเข้มข้น เส้นเหนียวนุ่ม โรยสาหร่าย</p>
+            <div class="card__meta">
+              <span class="price">฿129</span>
+              <button class="btn btn--ghost" type="button">เพิ่มลงตะกร้า</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card">
+          <img class="card__img" src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_1000/https://shopee.co.th/blog/wp-content/uploads/2021/07/%E0%B9%80%E0%B8%81%E0%B8%B5%E0%B9%8A%E0%B8%A2%E0%B8%A7%E0%B8%8B%E0%B9%88%E0%B8%B2.jpg" alt="เกี๊ยวซ่าทอดกรอบ" />
+          <div class="card__body">
+            <h3 class="card__title">เกี๊ยวซ่าทอด</h3>
+            <p class="card__desc">กรอบนอกนุ่มใน เสิร์ฟพร้อมซอสเปรี้ยวหวาน</p>
+            <div class="card__meta">
+              <span class="price">฿59</span>
+              <button class="btn btn--ghost" type="button">เพิ่มลงตะกร้า</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="card">
+          <img class="card__img" src="https://richingmatcha.com/wp-content/uploads/2024/02/4_1-1.jpg" alt="ชาเขียวเย็น" />
+          <div class="card__body">
+            <h3 class="card__title">มัทฉะเย็น</h3>
+            <p class="card__desc">หอมเข้ม ชื่นใจ ไม่หวานเกิน</p>
+            <div class="card__meta">
+              <span class="price">฿49</span>
+              <button class="btn btn--ghost" type="button">เพิ่มลงตะกร้า</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="card">
+          <img class="card__img" src="https://api2.krua.co/wp-content/uploads/2020/06/SEOForm_RI0364_1200x630.jpg" alt="ข้าวหน้าไก่เทอริยากิ" />
+          <div class="card__body">
+            <h3 class="card__title">ข้าวหน้าไก่เทริยากิ</h3>
+            <p class="card__desc">ไก่ย่างซอสเทริยากิ หอมหวานกลมกล่อม</p>
+            <div class="card__meta">
+              <span class="price">฿79</span>
+              <button class="btn btn--ghost" type="button">เพิ่มลงตะกร้า</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="card">
+          <img class="card__img" src="https://cheewajit.com/app/uploads/2017/02/136_recipe_001s.jpg" alt="พุดดิ้งชาเขียว" />
+          <div class="card__body">
+            <h3 class="card__title">พุดดิ้งชาเขียว</h3>
+            <p class="card__desc">เดสเสิร์ตเบาๆ หอมละมุน</p>
+            <div class="card__meta">
+              <span class="price">฿45</span>
+              <button class="btn btn--ghost" type="button">เพิ่มลงตะกร้า</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <!-- Service Highlights -->
+  <section id="service" class="highlights">
+    <div class="container highlights__grid">
+      <div class="highlight">
+        <div class="highlight__icon">🚚</div>
+        <h4 class="highlight__title">จัดส่งไว</h4>
+        <p class="highlight__desc">โซนใกล้ร้านเฉลี่ย 25–40 นาที*</p>
+      </div>
+      <div class="highlight">
+        <div class="highlight__icon">🥗</div>
+        <h4 class="highlight__title">ทำสดใหม่</h4>
+        <p class="highlight__desc">ปรุงเมื่อได้รับออเดอร์เท่านั้น</p>
+      </div>
+      <div class="highlight">
+        <div class="highlight__icon">💳</div>
+        <h4 class="highlight__title">หลายวิธีชำระเงิน</h4>
+        <p class="highlight__desc">โอน/เก็บปลายทาง/สแกนจ่าย</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="https://dummyimage.com/120x36/000/fff&text=LOGO" alt="โลโก้ร้าน" />
+        <p>ร้าน Neko Delivery — อร่อยง่าย ส่งไว</p>
+      </div>
+      <div class="footer__links">
+        <a href="#">เกี่ยวกับเรา</a>
+        <a href="#">วิธีสั่งซื้อ</a>
+        <a href="#">คำถามที่พบบ่อย</a>
+        <a href="#">นโยบายความเป็นส่วนตัว</a>
+      </div>
+      <div class="footer__contact">
+        <p>โทร: 08x-xxx-xxxx</p>
+        <p>LINE: @nekodeli</p>
+        <p>ที่ตั้งร้าน: ถนนตัวอย่าง เขตตัวอย่าง กรุงเทพฯ</p>
+      </div>
+    </div>
+    <div class="footer__copy">© 2025 Neko Delivery</div>
+  </footer>
+
+  <!-- Mobile Sticky Order Bar (UI อย่างเดียว) -->
+  <div class="mobile-bar">
+    <div class="mobile-bar__inner">
+      <span>🧺 0 รายการ</span>
+      <button class="btn">ไปตะกร้า</button>
+    </div>
+  </div>
+</body>
+</html>

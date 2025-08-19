@@ -1,0 +1,121 @@
+/* =======================
+   🎨 Menu Page Styles
+======================= */
+
+/* Title Section */
+.menu-title {
+  text-align: center;
+  margin: 40px 0 20px;
+}
+.menu-title h1 {
+  font-size: 2.2rem;
+  color: var(--accent);
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+}
+.menu-title h1::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 4px;
+  background: var(--accent-weak);
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+.menu-title p {
+  font-size: 1rem;
+  color: var(--muted);
+}
+
+/* Categories Pills */
+.categories {
+  background: #fff;
+  padding: 1rem;
+  box-shadow: var(--shadow);
+}
+.categories__inner {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.chip {
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--accent);
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+}
+.chip:hover,
+.chip.is-active {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* Menu Grid */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  padding: 20px 10px 40px;
+}
+.menu-item {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  text-align: center;
+  padding: 14px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.menu-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+.menu-item img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: var(--radius);
+  margin-bottom: 8px;
+}
+.menu-item h3 {
+  margin: 6px 0 4px;
+  font-size: 1.1rem;
+  color: var(--text);
+}
+.menu-item p {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+.menu-item span.price {
+  display: inline-block;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+.menu-item .btn {
+  border: 1px solid var(--text);
+  background: var(--text);
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.menu-item .btn:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .menu-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+}

@@ -1,0 +1,167 @@
+/* =======================
+   🎨 Base & Variables
+======================= */
+:root {
+  --primary: #000000;
+  --secondary: #ffd166;
+  --accent: #111827;
+  --accent-weak: #f0f1f3;
+
+  --bg: #f7f7f8;
+  --card: #ffffff;
+  --text: #0f172a;
+  --muted: #6b7280;
+  --line: #e5e7eb;
+
+  --radius: 16px;
+  --shadow: 0 6px 24px rgba(0,0,0,.06);
+}
+
+/* =======================
+   🔹 Global Styles
+======================= */
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; font-family: "Noto Sans Thai", system-ui, sans-serif; line-height: 1.55; color: var(--text); background: var(--bg); }
+img { max-width: 100%; display: block; }
+.container { width: min(1120px, 92%); margin-inline: auto; padding: 1rem; }
+
+/* =======================
+   🔝 Header
+======================= */
+.header {
+  position: sticky; top: 0; z-index: 50;
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: saturate(180%) blur(6px);
+}
+.header__inner { display: flex; align-items: center; gap: 16px; padding: 12px 0; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: inherit; }
+.brand__logo { height: 60px; width: auto; }
+.brand__name { font-weight: 700; letter-spacing: .2px; }
+
+/* Navigation */
+.nav { display: flex; gap: 16px; align-items: center; }
+.nav__link { color: var(--text); text-decoration: none; font-weight: 500; }
+.nav__link:hover { text-decoration: underline; }
+.nav__cart { display: flex; align-items: center; gap: 6px; text-decoration: none; color: var(--text); font-weight: 600; }
+.nav__cart-text { display: inline; }
+
+/* =======================
+   🔹 Page Titles
+======================= */
+.menu-title {
+  text-align: center;
+  margin: 40px 0 20px;
+}
+.menu-title h1 {
+  font-size: 2.2rem;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+.menu-title p { font-size: 1rem; color: var(--muted); }
+
+/* =======================
+   📌 Categories Pills
+======================= */
+.categories {
+  background: #fff;
+  padding: 1rem;
+  box-shadow: var(--shadow);
+}
+.categories__inner {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.chip {
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--accent);
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+}
+.chip:hover,
+.chip.is-active {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* =======================
+   🍱 Menu Grid
+======================= */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  padding: 20px 10px 40px;
+}
+.menu-item {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  text-align: center;
+  padding: 14px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.menu-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+.menu-item img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: var(--radius);
+  margin-bottom: 8px;
+}
+.menu-item h3 { margin: 6px 0 4px; font-size: 1.1rem; color: var(--text); }
+.menu-item p { font-size: 0.9rem; color: var(--muted); margin-bottom: 6px; }
+.menu-item span.price { display: inline-block; font-weight: 700; color: var(--accent); }
+.menu-item .btn {
+  border: 1px solid var(--text);
+  background: var(--text);
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.menu-item .btn:hover { opacity: 0.9; }
+
+/* =======================
+   🌟 Footer
+======================= */
+.footer {
+  background: #fff;
+  border-top: 1px solid var(--line);
+  padding-top: 22px;
+}
+.footer__inner {
+  display: grid; gap: 16px;
+  grid-template-columns: repeat(12, 1fr);
+}
+.footer__brand { grid-column: span 12; }
+.footer__links { grid-column: span 12; display: flex; gap: 14px; flex-wrap: wrap; }
+.footer__links a { color: var(--text); text-decoration: none; }
+.footer__links a:hover { text-decoration: underline; }
+.footer__contact { grid-column: span 12; color: var(--muted); }
+.footer__copy {
+  border-top: 1px solid var(--line);
+  text-align: center;
+  padding: 12px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* =======================
+   📐 Responsive
+======================= */
+@media (max-width:768px){
+  .menu-grid { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+  .nav__link, .nav__cart-text { display: none; }
+}
