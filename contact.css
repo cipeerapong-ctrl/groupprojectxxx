@@ -12,6 +12,35 @@
   --radius: 16px;
   --shadow: 0 6px 24px rgba(0,0,0,.06);
 }
+.creator-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 20px 16px;
+  margin-bottom: 20px;
+  text-align: center;
+  
+}
+.creator-container {
+  display: flex;
+  justify-content: center; /* จัดแนวนอนกลาง */
+  align-items: center;     /* จัดแนวตั้งกลาง */
+  min-height: 60vh;        /* สูงพอสมควรให้กล่องอยู่กลางจอ */
+}
+
+
+.creator-card h3 {
+  margin-bottom: 8px;
+  color: var(--accent);
+  font-size: 1.2rem;
+}
+
+.creator-card p {
+  font-size: 1rem;
+  color: var(--text);
+  margin: 0;
+}
+
 
 /* Reset & Base */
 * { box-sizing: border-box; }
