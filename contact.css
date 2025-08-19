@@ -30,7 +30,7 @@
 
 
 .creator-card h3 {
-  margin-bottom: 8px;
+  margin-bottom: 7px;
   color: var(--accent);
   font-size: 1.2rem;
 }
@@ -170,3 +170,4 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
