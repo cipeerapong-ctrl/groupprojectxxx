@@ -1,76 +1,76 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>การจัดส่ง — Neko Delivery</title>
-  <link rel="stylesheet" href="delivery.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>การจัดส่ง - Neko Delivery</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <!-- Header -->
   <header class="header">
     <div class="container header__inner">
       <a class="brand" href="index.html">
-        <img src="nekologo.png" alt="โลโก้ร้าน" class="brand__logo">
+        <img src="nekologo.png" alt="โลโก้ร้าน" class="brand__logo" />
         <span class="brand__name">Neko Delivery</span>
       </a>
+
       <nav class="nav">
-        <a href="index.html" class="nav__link">หน้าแรก</a>
         <a href="menu.html" class="nav__link">เมนู</a>
         <a href="delivery.html" class="nav__link">การจัดส่ง</a>
-        <a href="#contact" class="nav__link">ติดต่อ</a>
+        <a href="contact.html" class="nav__link">ติดต่อ</a>
       </nav>
     </div>
   </header>
 
-  <!-- Title -->
+  <!-- Page Title -->
   <section class="menu-title">
-    <h1>การจัดส่งของเรา</h1>
-    <p>ข้อมูลโซนจัดส่ง, ค่าบริการ และเวลาที่จัดส่ง</p>
-  </section>
-
-  <!-- Delivery Zones -->
-  <section class="highlights">
-    <div class="container highlights__grid">
-      <div class="highlight">
-        <div class="highlight__icon">📍</div>
-        <h4 class="highlight__title">พื้นที่ใกล้ร้าน</h4>
-        <p class="highlight__desc">ระยะ 0–3 กม. — ส่งฟรี <br>เวลาจัดส่ง 25–40 นาที</p>
-      </div>
-      <div class="highlight">
-        <div class="highlight__icon">🚗</div>
-        <h4 class="highlight__title">พื้นที่ไกลขึ้น</h4>
-        <p class="highlight__desc">ระยะ 3–6 กม. — ค่าจัดส่ง 30 บาท <br>เวลาจัดส่ง 40–60 นาที</p>
-      </div>
-      <div class="highlight">
-        <div class="highlight__icon">⏱️</div>
-        <h4 class="highlight__title">ช่วงเวลาให้บริการ</h4>
-        <p class="highlight__desc">ทุกวัน 10:00–21:00 <br>หยุดวันนักขัตฤกษ์ตามประกาศร้าน</p>
-      </div>
+    <div class="container">
+      <h1>การจัดส่ง</h1>
+      <p>สั่งอาหารง่าย ส่งไว สดใหม่ ถึงบ้านคุณ</p>
     </div>
   </section>
 
-  <!-- Delivery Instructions -->
-  <section class="delivery-info">
-    <div class="container">
-      <h2>วิธีสั่งและจัดส่ง</h2>
-      <ul>
-        <li>เลือกเมนูที่ต้องการและเพิ่มลงตะกร้า</li>
-        <li>ระบุที่อยู่จัดส่งให้ชัดเจน</li>
-        <li>เลือกวิธีชำระเงิน (เก็บปลายทาง / โอน / QR Code)</li>
-        <li>พนักงานจัดส่งจะติดต่อทางโทรศัพท์ก่อนถึงบ้าน</li>
+  <!-- Delivery Info Cards -->
+  <main class="menu-grid container">
+    <div class="menu-item">
+      <h3>พื้นที่ให้บริการ</h3>
+      <p>กรุงเทพฯ และปริมณฑล พร้อมจัดส่งถึงบ้านคุณ</p>
+    </div>
+
+    <div class="menu-item">
+      <h3>เวลาในการจัดส่ง</h3>
+      <p>โดยปกติภายใน 30–60 นาที ขึ้นอยู่กับสภาพการจราจร</p>
+    </div>
+
+    <div class="menu-item">
+      <h3>ค่าจัดส่ง</h3>
+      <p>ฟรีสำหรับออเดอร์ ≥ 200 บาท ต่ำกว่านี้ 30 บาท</p>
+    </div>
+
+    <div class="menu-item">
+      <h3>ติดตามออเดอร์</h3>
+      <p>ตรวจสอบสถานะผ่านหมายเลขโทรศัพท์หรือหน้า “ตะกร้าสินค้า”</p>
+    </div>
+  </main>
+
+  <!-- Delivery Tips -->
+  <section class="container menu-grid">
+    <div class="menu-item">
+      <h3>คำแนะนำเพื่อการจัดส่งที่รวดเร็ว</h3>
+      <ul style="text-align:left; padding-left:16px;">
+        <li>ตรวจสอบที่อยู่ให้ถูกต้องก่อนกดยืนยันสั่งอาหาร</li>
+        <li>ระบุเบอร์โทรศัพท์ที่ใช้งานได้</li>
+        <li>เลือกเวลาจัดส่งล่วงหน้า หากต้องการความแน่นอน</li>
       </ul>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer id="contact" class="footer">
+  <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <img src="https://dummyimage.com/120x36/000/fff&text=LOGO" alt="โลโก้ร้าน">
+        <img src="https://dummyimage.com/120x36/000/fff&text=LOGO" alt="โลโก้ร้าน" />
         <p>ร้าน Neko Delivery — อร่อยง่าย ส่งไว</p>
       </div>
       <div class="footer__links">
@@ -89,4 +89,3 @@
   </footer>
 </body>
 </html>
-
